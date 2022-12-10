@@ -6,8 +6,8 @@ This is a demo of how to use Bazel to build a Rust project that depends on a pro
 
 First, ensure that you have:
 
-- [Installed Bazel](https://bazel.build/install). 
-- [Installed Rust](https://www.rust-lang.org/tools/install).
+- [Installed Bazel](https://bazel.build/install)
+- [Installed Rust](https://www.rust-lang.org/tools/install)
 - [Installed Cargo Raze](https://github.com/google/cargo-raze)
 
 Then run the following:
@@ -22,4 +22,4 @@ cargo generate-lockfile && cargo raze
 
 ```
 bazel run //project/src:main
-``
+```
