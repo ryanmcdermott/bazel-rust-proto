@@ -1,0 +1,18 @@
+[package]
+name = "bazel_rust_template"
+version = "0.1.0"
+edition = "2018"
+rust-version = "1.65.0"
+
+[dependencies]
+
+[package.metadata.raze]
+workspace_path = "//project/cargo"
+gen_workspace_prefix = "cargo"
+genmode = "Remote"
+package_aliases_dir = "cargo"
+targets = ["aarch64-unknown-linux-gnu"]
+default_gen_buildrs = true
+
+[package.metadata.docs.rs]
+targets = ["aarch64-unknown-linux-gnu"]
