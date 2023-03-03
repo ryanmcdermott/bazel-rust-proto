@@ -11,4 +11,21 @@ licenses([
     "notice",  # See individual crates for specific licenses
 ])
 
-# No targets defined
+# Aliased targets
+alias(
+    name = "protobuf",
+    actual = "@cargo__protobuf__3_2_0//:protobuf",
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+)
+
+alias(
+    name = "protobuf_codegen",
+    actual = "@cargo__protobuf_codegen__3_2_0//:protobuf_codegen",
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+)

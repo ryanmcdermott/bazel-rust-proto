@@ -1,7 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_rust//rust:defs.bzl", "rust_binary")
-load("@rules_proto_grpc//rust:defs.bzl", "rust_proto_library")
+load("@rules_rust//proto:proto.bzl", "rust_proto_library")
 
 proto_library(
     name = "foo_proto",
@@ -10,7 +10,7 @@ proto_library(
 
 rust_proto_library(
     name = "foo_proto_lib",
-    protos = [":foo_proto"],
+    deps = [":foo_proto"],
 )
 
 rust_binary(
