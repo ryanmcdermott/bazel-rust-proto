@@ -11,10 +11,11 @@ proto_library(
 rust_proto_library(
     name = "foo_proto_lib",
     deps = [":foo_proto"],
+    rust_deps = ["//project/cargo:protobuf"],
 )
 
 rust_binary(
     name = "main",
     srcs = ["main.rs"],
-    deps = [":foo_proto_lib"]
+    deps = [":foo_proto_lib"],
 )
