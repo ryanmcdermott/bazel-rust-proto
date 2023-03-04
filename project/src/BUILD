@@ -17,5 +17,5 @@ rust_proto_library(
 rust_binary(
     name = "main",
     srcs = ["main.rs"],
-    deps = [":foo_proto_lib"],
+    deps = [":foo_proto_lib", "//project/cargo:protobuf"],
 )
