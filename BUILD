@@ -5,9 +5,9 @@ rust_proto_toolchain(
     name = "rust_proto_toolchain_impl",
     edition = "2021",
     protoc = "@com_google_protobuf//:protoc",
-    # proto_compile_deps = ["@crate_index//:protobuf"],
-    proto_plugin = "//project/cargo:protobuf",
-    # proto_plugin = "//cargo_raze/remote:cargo_bin_protoc_gen_rust",
+    # proto_plugin = "//project/cargo:protobuf_codegen",
+    proto_plugin = "@cargo__protobuf_codegen__3_2_0//:cargo_bin_protoc_gen_rust",
+    proto_compile_deps = ["//project/cargo:protobuf"]
 )
 
 toolchain(

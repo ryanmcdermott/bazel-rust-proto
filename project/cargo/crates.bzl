@@ -343,12 +343,12 @@ def cargo_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "cargo__unicode_ident__1_0_6",
-        url = "https://crates.io/api/v1/crates/unicode-ident/1.0.6/download",
+        name = "cargo__unicode_ident__1_0_7",
+        url = "https://crates.io/api/v1/crates/unicode-ident/1.0.7/download",
         type = "tar.gz",
-        sha256 = "84a22b9f218b40614adcb3f4ff08b703773ad44fa9423e4e0d346d5db86e4ebc",
-        strip_prefix = "unicode-ident-1.0.6",
-        build_file = Label("//project/cargo/remote:BUILD.unicode-ident-1.0.6.bazel"),
+        sha256 = "775c11906edafc97bc378816b94585fbd9a054eabaf86fdd0ced94af449efab7",
+        strip_prefix = "unicode-ident-1.0.7",
+        build_file = Label("//project/cargo/remote:BUILD.unicode-ident-1.0.7.bazel"),
     )
 
     maybe(

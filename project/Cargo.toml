@@ -19,3 +19,7 @@ default_gen_buildrs = true
 
 [package.metadata.docs.rs]
 targets = ["aarch64-unknown-linux-gnu"]
+
+[package.metadata.raze.crates.protobuf-parse.'*']
+compile_data_attr = "glob([\"**/*.proto\"])"
+# compile_data_attr = "[\"google/protobuf/any.proto\"]"
